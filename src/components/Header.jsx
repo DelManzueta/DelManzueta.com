@@ -7,7 +7,7 @@ const Header = ({ history }) => {
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: 'Menu'
+    menuName: 'menu'
   })
   // State of our button
   const [disabled, setDisabled] = useState(false)
@@ -16,7 +16,7 @@ const Header = ({ history }) => {
   useEffect(() => {
     //Listening for page changes.
     history.listen(() => {
-      setState({ clicked: false, menuName: 'Menu' })
+      setState({ clicked: false, menuName: 'menu' })
     })
   }, [history])
 
@@ -27,17 +27,17 @@ const Header = ({ history }) => {
       setState({
         initial: null,
         clicked: true,
-        menuName: 'Close'
+        menuName: 'close'
       })
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: 'Menu'
+        menuName: 'menu'
       })
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: 'Close'
+        menuName: 'close'
       })
     }
   }
@@ -56,7 +56,7 @@ const Header = ({ history }) => {
         <div className='wrapper'>
           <div className='inner-header'>
             <div className='logo'>
-              <Link to='/'>DEL MANZUETA</Link>
+              <Link to='/'>Del<span>.</span></Link>
             </div>
             <div className='menu'>
               <button disabled={disabled} onClick={handleMenu}>

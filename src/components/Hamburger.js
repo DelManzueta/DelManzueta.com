@@ -102,7 +102,7 @@ const Hamburger = ({ state }) => {
                 </ul>
               </nav>
               <div ref={el => (info = el)} className='info'>
-                <h3>Our Promise</h3>
+                <h3>Some Links</h3>
                 <p>
                   The passage experienced a surge in popularity during the 1960s
                   when Letraset used it on their dry-transfer sheets, and again
