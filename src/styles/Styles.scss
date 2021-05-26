@@ -16,7 +16,7 @@ html,
 body {
     padding: 0;
     margin: 0;
-    background-color: $black;
+    background: rgb(33, 37, 41); 
 }
 
 .container {
@@ -24,6 +24,9 @@ body {
     margin: 0 auto;
     .wrapper {
         color: $white;
+        .social {
+            margin: 0 0.5rem;
+        }
         .home {
             display: flex;
             flex-wrap: wrap;
@@ -41,7 +44,7 @@ body {
                 font-size: 1.25em;
                 letter-spacing: 0.063rem;
                 font-weight: 500;
-                font-family: $ff-body;
+                font-family: $ff-primary;
                 flex-wrap: wrap;
             }
         }
@@ -93,7 +96,18 @@ header {
         height: 100%;
         width: 100%;
         .menu-secondary-background-color {
-            background: $black;
+            background: $yellow;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        .menu-tri-background-color {
+            background: $red;
             top: 0;
             left: 0;
             right: 0;
@@ -105,7 +119,7 @@ header {
         }
         .menu-layer {
             position: relative;
-            background: $red;
+            background: $green;
             height: 100%;
             overflow: hidden;
             .menu-city-background {
@@ -137,6 +151,7 @@ header {
                             margin: 0;
                             padding: 0;
                             li {
+                                font-family: $ff-primary;
                                 list-style: none;
                                 font-size: 6rem;
                                 font-weight: 700;
@@ -147,10 +162,11 @@ header {
                                 width: 700px;
                                 a {
                                     position: absolute;
-                                    color: #fff;
+                                    color: $blue;
                                     text-decoration: none;
                                     &:hover {
                                         color: $black;
+                                        border-bottom: 5px solid $white;
                                     }
                                 }
                             }

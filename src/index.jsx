@@ -6,8 +6,8 @@ import Contact from './components/Contact'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Portfolio from './components/Portfolio'
-import Resume from './components/Resume'
-import './styles/Styles.scss'
+import Resume from './components/Resume' 
+import './styles/styles.css'
 
 class MyPortfolio extends React.Component {
   render () {

@@ -1,0 +1,102 @@
+@import "./global.css";
+
+.hamburger-menu {
+  display: none;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-secondary-background-color {
+  z-index: -1;
+  background: var(--yellow);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-tri-background-color {
+  z-index: -1;
+  background: var(--red);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-layer {
+    position: relative;
+    background: var(--green);
+    height: 100%;
+    overflow: hidden;
+}
+
+.burger-wrapper { 
+    position: relative;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 20.5vh;
+}
+nav {
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li { 
+    font-family: var(--ff-primary);
+    list-style: none;
+    font-size: 6em;
+    font-weight: 900;
+    cursor: pointer; 
+    height: 8.75rem;
+    overflow: hidden;
+    position: relative;
+    width: 43.75rem;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--blue);
+    position: absolute;
+}
+
+li > a:hover {
+    color: var(--black);
+    border-bottom: 5px solid var(--yellow)
+}
+
+.social-ham {
+    margin: 0 0.5rem;
+    transition: .5s all ease-out;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    
+  }
+  .social-ham:hover {
+    filter: drop-shadow(0.24rem 0.5rem 0.54rem rgba(50,88,58, 0.75));
+    -webkit-transform: scale(1); transform: scale(1.25); 
+    border-radius: 2rem;
+    transition: .5s all ease;
+    overflow: visible;
+    background-color: var(--white);
+  }

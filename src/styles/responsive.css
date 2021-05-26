@@ -1,0 +1,24 @@
+@import "./global.css";
+
+@media only screen and (max-width: 768px) {
+  .wrapper > .home {
+    margin: 0 auto;
+    padding: 0;
+    width: 90vw;
+    display: flex;
+    font-size: 1.1em;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  li { 
+    font-family: var(--ff-primary);
+    list-style: none;
+    font-size: 5em !important;
+    font-weight: 900;
+    cursor: pointer; 
+    height: 6rem !important;
+    overflow: hidden;
+    position: relative;
+    width: 43.75rem;
+}
+}

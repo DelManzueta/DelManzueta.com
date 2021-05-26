@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { Link } from 'react-router-dom'
+import { SocialIcon } from 'react-social-icons'
+
 
 import {
   staggerText,
@@ -12,10 +14,12 @@ import {
 } from './Animations'
 
 const Hamburger = ({ state }) => {
-  // Create varibles of our dom nodes
+  // Create variables of our dom nodes
   let menuLayer = useRef(null)
   let reveal1 = useRef(null)
   let reveal2 = useRef(null)
+   // eslint-disable-next-line
+  let reveal3 = useRef(null)
   let line1 = useRef(null)
   let line2 = useRef(null)
   let line3 = useRef(null)
@@ -55,7 +59,7 @@ const Hamburger = ({ state }) => {
       ></div>
       <div ref={el => (reveal2 = el)} className='menu-layer'>
         <div className='container'>
-          <div className='wrapper'>
+          <div className='burger-wrapper'>
             <div className='menu-links'>
               <nav>
                 <ul>
@@ -101,14 +105,19 @@ const Hamburger = ({ state }) => {
                   </li>
                 </ul>
               </nav>
-              <div ref={el => (info = el)} className='info'>
-                <h3>Some Links</h3>
-                <p>
-                  The passage experienced a surge in popularity during the 1960s
-                  when Letraset used it on their dry-transfer sheets, and again
-                  during the 90s as desktop publishers bundled the text with
-                  their software.
-                </p>
+              <div ref={el => (info = el)} className='info'> 
+                <SocialIcon
+                  className='social-ham'
+                  url='https://www.linkedin.com/in/delwingmanzueta/' 
+                  target='blank'
+                  label='LinkedIn Profile'
+                />
+                <SocialIcon
+                  className='social-ham'
+                  url='https://github.com/DelManzueta' 
+                  target='blank'
+                  label='GitHub Profile'
+                />
               </div>
             </div>
           </div>

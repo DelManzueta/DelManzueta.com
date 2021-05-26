@@ -1,0 +1,23 @@
+/** all styles **/
+
+@import "./global.css";
+@import "./responsive.css";
+@import "./hero.css";
+@import "./header.css";
+@import "./hamburger.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--black);
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.wrapper {
+  color: var(--white);
+}
+ 
