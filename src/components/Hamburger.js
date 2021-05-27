@@ -88,6 +88,16 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
                       ref={el => (line3 = el)}
+                      to='/portfolio'
+                    >
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onMouseEnter={e => handleHover(e)}
+                      onMouseOut={e => handleHoverExit(e)}
+                      ref={el => (line3 = el)}
                       to='/resume'
                     >
                       History

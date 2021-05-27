@@ -21,4 +21,7 @@
     position: relative;
     width: 43.75rem;
 }
+.tsparticles-canvas-el {  
+  display: none;
+}
 }

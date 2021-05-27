@@ -1,16 +1,17 @@
-import React from 'react' 
+import React from 'react'
+import '../styles/about.css'
 
 export default function About () {
   return (
-    <div>
-      <h1>About Me</h1>
-      <h5>
-        A Full-Stack Web Developer, with a strong visual design background,
-        experienced in providing rapid, robust front and back-end web
-        development, optimizing user experience into innovative, interactive
-        solutions. Proven ability working within cross-functional teams,
-        possessing strong interpersonal skills in high-demand settings.
-      </h5> 
+    <div className='angry-grid'>
+      <div id='item-0'>
+        <h2>Allow me to reintroduce myself</h2>
+        <h1>My Name is Del</h1>
+      </div>
+      <div id='item-1'>&nbsp;</div>
+      <div id='item-2'>&nbsp;</div>
+      <div id='item-3'>&nbsp;</div>
+      <div id='item-4'>&nbsp;</div>
     </div>
   )
 }

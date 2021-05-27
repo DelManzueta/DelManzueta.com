@@ -4,6 +4,7 @@ import { SocialIcon } from 'react-social-icons'
 export default function Hero () {
   return (
     <div className='container'>
+      
       <div className='wrapper'>
         <section className='hero'>
           <h5>
