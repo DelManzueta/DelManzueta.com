@@ -1,14 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import About from './components/About'
+import { About } from './components/About'
 import Contact from './components/Contact'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
 import './styles/styles.css'
- 
 
 class MyPortfolio extends React.Component {
   render () {
@@ -16,11 +15,10 @@ class MyPortfolio extends React.Component {
       <Router>
         <div className='main-index'>
           <Header />
-          
+
           <div className='container'>
             <div className='wrapper'>
-              <div className='home'> 
-
+              <div className='home'>
                 <Switch>
                   <Route exact path='/' component={Hero} />
                   <Route exact path='/about' component={About} />

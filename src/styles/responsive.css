@@ -28,12 +28,35 @@
     width: 43.75rem;
   }
   .about-container {
-    border: 3px dotted purple;
+    border: 3px dotted transparent;
   }
   [class*="grid_"] {
     width: 100%;
   }
   .col {
     margin: 1% 0 1% 0%;
+  }
+  .del-img {
+    border-radius: 25px !important;
+    width: 75%;
+    padding: 1rem auto;
+    margin: 0 auto;
+    box-shadow: -2px 48px 73px -19px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -2px 48px 73px -19px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -2px 48px 73px -19px rgba(0, 0, 0, 1);
+    overflow: hidden;
+  }
+  .about-main > h1 {
+    font-family: var(--ff-primary);
+    padding: 2rem 1rem 0 1rem;
+    margin: 0 auto;
+    font-size: 2.65em;
+    font-weight: 600;  
+  }
+
+  .about-txt {
+    font-size: 1em;
+    padding: 0 1rem;
+    font-weight: 400; 
   }
 }

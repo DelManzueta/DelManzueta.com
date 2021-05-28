@@ -8,7 +8,7 @@ export default function Hero () {
       <div className='wrapper'>
         <section className='hero'>
           <h5>
-            Hi, I'm Del, a full stack developer, with a strong creative
+            I'm Del, a full stack developer, with a strong creative
             background, experienced in providing rapid, robust front and
             back-end web development, optimizing user experience into
             innovative, interactive solutions. Proven ability working within
