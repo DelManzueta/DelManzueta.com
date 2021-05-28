@@ -23,7 +23,7 @@
   font-weight: 600;
   min-width: 5vw;
   line-height: 0.95em;
-  color: var(--green);
+  color: var(--accent);
 }
 
 .about-txt {

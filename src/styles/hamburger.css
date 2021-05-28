@@ -36,67 +36,70 @@
 }
 
 .menu-layer {
-    position: relative;
-    background: var(--green);
-    height: 100%;
-    overflow: hidden;
+  position: relative;
+  background: var(--accent);
+  height: 100%;
+  overflow: hidden;
 }
 
-.burger-wrapper { 
-    position: relative;
+.burger-wrapper {
+  position: relative;
 }
 
 .menu-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 20.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 20.5vh;
 }
 nav {
-    display: block;
+  display: block;
 }
 
 ul {
-    margin: 0;
-    padding: 0
+  margin: 0;
+  padding: 0;
 }
 
-li { 
-    font-family: var(--ff-primary);
-    list-style: none;
-    font-size: 6em;
-    font-weight: 900;
-    cursor: pointer; 
-    height: 8.75rem;
-    overflow: hidden;
-    position: relative;
-    width: 43.75rem;
+li {
+  font-family: var(--ff-primary);
+  list-style: none;
+  font-size: 6em;
+  font-weight: 900;
+  cursor: pointer;
+  height: 8.75rem;
+  overflow: hidden;
+  position: relative;
+  width: 43.75rem;
 }
 
 li > a {
-    text-decoration: none;
-    color: var(--blue);
-    position: absolute;
+  text-decoration: none;
+  color: var(--red);
+  position: absolute;
 }
 
 li > a:hover {
-    color: var(--black);
-    border-bottom: 5px solid var(--yellow)
+  color: var(--white);
+  border-bottom: 5px solid var(--yellow);
+  text-shadow: 1.125rem .75rem .5rem rgba(164, 22, 35, 0.57);
+  transition: 0.2s ease all;
 }
 
 .social-ham {
-    margin: 0 0.5rem;
-    transition: .5s all ease-out;
-    border: 2px solid transparent;
-    border-radius: 2rem;
-    
-  }
-  .social-ham:hover {
-    filter: drop-shadow(0.24rem 0.5rem 0.54rem rgba(50,88,58, 0.75));
-    -webkit-transform: scale(1); transform: scale(1.25); 
-    border-radius: 2rem;
-    transition: .5s all ease;
-    overflow: visible;
-    background-color: var(--white);
-  }
+  margin: 0 0.5rem;
+  transition: 0.5s all ease-out;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  background-color: var(--white);
+}
+.social-ham:hover {
+  filter: drop-shadow(1px 12px 5px rgba(164,22,35,0.71));
+  -webkit-transform: scale(1);
+  transform: scale(1.25);
+  border-radius: 2rem;
+  transition: 0.5s all ease;
+  overflow: visible;
+  background-color: var(--white);
+}
