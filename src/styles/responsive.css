@@ -1,5 +1,11 @@
 @import "./global.css";
 
+@media only screen and (max-width: 956px) {
+  .about-container {
+    
+  }  
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper > .home {
     margin: 0 auto;
@@ -10,18 +16,21 @@
     display: flex;
     flex-wrap: nowrap;
   }
-  li { 
+  li {
     font-family: var(--ff-primary);
     list-style: none;
     font-size: 5em !important;
     font-weight: 900;
-    cursor: pointer; 
+    cursor: pointer;
     height: 6rem !important;
     overflow: hidden;
     position: relative;
     width: 43.75rem;
+  }
+  .about-container {
+    font-size: 2.5em; 
+    color: white;
+    flex-direction: column;
+  }
 }
-.tsparticles-canvas-el {  
-  display: none;
-}
-}
+
