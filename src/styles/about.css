@@ -1,13 +1,69 @@
 @import "./global.css";
 
 .about-container {
-  display: flex;
-  flex-direction: row; 
-   border: 2px solid red;
-   margin: 5rem 0;
-   justify-content: space-between;
-} 
-
-.about-container > span {
-    max-width: 45%;
+  border: 3px dotted red;
 }
+.del-img {
+  width: 50px;
+} 
+.grid-demo {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Grid 1 of 2*/
+.grid_1_of_2 {
+  width: 49%;
+}
+.grid_2_of_2 {
+  width: 100%;
+}
+
+/* Grid 1 of 3*/
+.grid_1_of_3 {
+  width: 28%;
+}
+
+.grid_1_of_3 img {
+  width: 100% !important;
+}
+
+.grid_2_of_3 {
+  width: 70%;
+}
+.grid_3_of_3 {
+  width: 100%;
+}
+
+/* Section */
+.section {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+/* Column */
+.col {
+  background: var(--accent); 
+  padding: 10px 0;
+  display: block;
+  float: left;
+  margin: 1% 0 1% 2%;
+}
+.col:first-child {
+  margin-left: 0 !important;
+}
+
+/* Row */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  zoom: 1; /* For IE 6/7 */
+}
+ 

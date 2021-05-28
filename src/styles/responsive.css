@@ -2,8 +2,8 @@
 
 @media only screen and (max-width: 956px) {
   .about-container {
-    
-  }  
+    border: 3px dashed yellowgreen;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -28,9 +28,12 @@
     width: 43.75rem;
   }
   .about-container {
-    font-size: 2.5em; 
-    color: white;
-    flex-direction: column;
+    border: 3px dotted purple;
+  }
+  [class*="grid_"] {
+    width: 100%;
+  }
+  .col {
+    margin: 1% 0 1% 0%;
   }
 }
-

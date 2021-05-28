@@ -1,30 +1,34 @@
 import React from 'react'
 import '../styles/about.css'
+import selfie from '../img/me.jpg'
 
 export default function About () {
   return (
-    <div className='about-container'>
-        <span>
-          Hi, I’m Del. After a long career as a visual designer, with web design
-          experience, I decided to make the full transition into web
-          development. My ability to translate client needs into successful
-          user-centered design for print and digital products opened the door to
-          web design, which lead to working directly with front-end technologies
-          such as HTML, CSS and a bit of JavaScript.
-        </span>
-        <span>
-          My interest in web development grew when I realized my natural
-          creative talent was perfectly complimented with my passion for problem
-          solving, allowing me to translate complex ideas into innovative
-          solutions. I offer a comprehensive understanding of human
-          decision-making behaviors and demonstrate the ability to work
-          intuitively within cross-functional teams.
-        
-          Aside from my technical abilities, my strengths lie in anticipating
-          uncommon issues regarding usability, and production, as well as
-          performing at the highest standards, regardless of capacity and
-          limitations.
-        </span>
+    <div className='grid-demo'>
+      <div className='about-container'>
+        <h2>CSS Grid Example</h2> 
+        <div className='section row'>
+          <div className='col grid_1_of_3'>
+            <img src={selfie} alt="" />
+          </div>
+          <div className='col grid_2_of_3'>
+            <div className='col grid_1_of_2'>
+              two quantities are in the golden ratio if the ratio of the sum of
+              the quantities to the larger quantity is equal to the ratio of the
+              larger quantity to the smaller one. It has a value of 1.618. If
+              you use a grid of eight, and split into five columns and three
+              columns the ratio is 1.66, which is pretty close.
+            </div>
+            <div className='col grid_1_of_2'>
+              two quantities are in the golden ratio if the ratio of the sum of
+              the quantities to the larger quantity is equal to the ratio of the
+              larger quantity to the smaller one. It has a value of 1.618. If
+              you use a grid of eight, and split into five columns and three
+              columns the ratio is 1.66, which is pretty close.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
