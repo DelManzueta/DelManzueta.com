@@ -1,14 +1,16 @@
 @import './global.css';
  
 
-.inner-header { 
-    z-index: 10;
-    position: relative;
-    height: 7.816rem;
-    display: flex;
-    flex-wrap: wrap;
+header {
+    padding: 2rem 0;
+}
+
+.top-menu { 
+    z-index: 1000;
+    position: relative; 
+    display: flex;  
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 
 .logo a {
@@ -29,8 +31,7 @@
     cursor: pointer;
     font-size: 1.5em;
     font-family: var(--ff-primary);
-    color: var(--white);
-    mix-blend-mode: difference;
+    color: var(--white); 
 }
 
 .menu button:hover{

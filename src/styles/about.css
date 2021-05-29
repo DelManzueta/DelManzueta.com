@@ -1,5 +1,8 @@
 @import "./global.css";
 
+
+/* === About Hero === */
+
 .about-container {
   max-width: 118.938rem;
   margin: 0 auto;
@@ -23,7 +26,7 @@
   font-weight: 600;
   min-width: 5vw;
   line-height: 0.95em;
-  color: var(--accent);
+  color: var(--accent); 
 }
 
 .about-txt {
@@ -74,10 +77,6 @@
 }
 .row:after {
   clear: both;
-}
-.tsparticles-canvas-el {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
-}
+} 
+
+/* === Skill Cards === */

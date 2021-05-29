@@ -14,12 +14,9 @@ body {
   background: var(--black);
 }
 
-.container {
-  width: 90vw;
-  margin: 0 auto;
-}
-.wrapper {
-  color: var(--white);
-}
+.container { 
+  width: 90vw; 
+  margin: 0 auto;  
+} 
 
  

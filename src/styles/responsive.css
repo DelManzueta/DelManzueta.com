@@ -1,20 +1,46 @@
 @import "./global.css";
 
-@media only screen and (max-width: 956px) {
-  .about-container {
-    border: 3px dashed yellowgreen;
+
+@media only screen and (min-width: 2160px) {
+  .home {
+    padding-top: 12vh !important;
+  }
+  .hero-copy {
+    font-size: 2em;
   }
 }
 
+@media only screen and (max-width: 956px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh !important;
+  }
+  .hero { 
+    width: 100% !important; 
+    flex-direction: column !important;
+  }
+  .hero-header {
+    font-size: 3.65em !important;
+    font-family: var(--ff-primary);  
+    letter-spacing: 0!important; 
+  } 
+  .hero-copy {
+    width: 100% !important;
+  } 
+  .about-container {
+    border: 3px dashed transparent;
+  } 
+}
+
 @media only screen and (max-width: 768px) {
-  .wrapper > .home {
+ .home {
     margin: 0 auto;
-    padding: 0;
-    width: 90vw;
+    padding-top: 2.5vh !important; 
     display: flex;
     font-size: 1.1em;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; 
   }
   li {
     font-family: var(--ff-primary);

@@ -10,7 +10,7 @@ const Header = ({ history }) => {
     menuName: 'menu'
   })
   // State of our button
-  const [disabled, setDisabled] = useState(false)
+  const [disabled, setDisabled] = useState(false) 
 
   //Use Effect
   useEffect(() => {
@@ -53,8 +53,7 @@ const Header = ({ history }) => {
   return (
     <header>
       <div className='container'>
-        <div className='wrapper'>
-          <div className='inner-header'>
+          <div className='top-menu'>
             <div className='logo'>
               <Link to='/'>Del<span>.</span></Link>
             </div>
@@ -65,7 +64,6 @@ const Header = ({ history }) => {
             </div>
           </div>
         </div>
-      </div>
       <Hamburger state={state} />
     </header>
   )
