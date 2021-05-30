@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/about.css'
 import selfie from '../img/me.jpg'
+import AboutCards from './AboutCards'
 
 export class About extends React.Component {
   render () {
@@ -42,48 +43,10 @@ export class About extends React.Component {
             </div>
           </div>
         </section>
-
-        <section className='col grid_2_of_2'>
-          <p className='about-txt'>
-            My interest in web development grew when I realized my natural
-            creative talent was perfectly complimented with my passion for
-            problem solving, allowing me to translate complex ideas into
-            innovative solutions. Aside from my technical abilities, my
-            strengths lie in anticipating uncommon issues regarding usability,
-            and production, as well as performing at the highest standards,
-            regardless of capacity and limitations.
-          </p>
-        </section>
-
-        <section className='col grid_2_of_2'>
-          <p className='about-txt'>
-            My interest in web development grew when I realized my natural
-            creative talent was perfectly complimented with my passion for
-            problem solving, allowing me to translate complex ideas into
-            innovative solutions. Aside from my technical abilities, my
-            strengths lie in anticipating uncommon issues regarding usability,
-            and production, as well as performing at the highest standards,
-            regardless of capacity and limitations.
-          </p>
-          <p className='about-txt'>
-            My interest in web development grew when I realized my natural
-            creative talent was perfectly complimented with my passion for
-            problem solving, allowing me to translate complex ideas into
-            innovative solutions. Aside from my technical abilities, my
-            strengths lie in anticipating uncommon issues regarding usability,
-            and production, as well as performing at the highest standards,
-            regardless of capacity and limitations.
-          </p>
-          <p className='about-txt'>
-            My interest in web development grew when I realized my natural
-            creative talent was perfectly complimented with my passion for
-            problem solving, allowing me to translate complex ideas into
-            innovative solutions. Aside from my technical abilities, my
-            strengths lie in anticipating uncommon issues regarding usability,
-            and production, as well as performing at the highest standards,
-            regardless of capacity and limitations.
-          </p>
-        </section>
+ 
+        <section>
+         <AboutCards/>
+        </section> 
       </div>
     )
   }
