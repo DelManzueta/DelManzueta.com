@@ -1,39 +1,41 @@
-@import './global.css';
- 
+@import "./global.css";
 
 header {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
-.top-menu { 
-    z-index: 1000;
-    position: relative; 
-    display: flex;  
-    justify-content: space-between;
-    align-items: center; 
+.top-menu {
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.logo {
+  filter: drop-shadow(0.1rem 0.5rem 0.54rem rgba(5, 5, 5, 0.25));
+}
 .logo a {
-    font-family: var(--ff-primary);
-    font-size: 2.85em;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--white);
-    letter-spacing: -0.095rem;
+  font-family: var(--ff-primary);
+  font-size: 2.85em;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+  letter-spacing: -0.095rem;
 }
 .logo span {
-    color: var(--yellow)
+  color: var(--yellow);
 }
 .menu button {
-    border: none;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.5em;
-    font-family: var(--ff-primary);
-    color: var(--white); 
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: var(--ff-primary);
+  color: var(--white);
 }
 
-.menu button:hover{
-    color: var(--white)
+.menu button:hover {
+  color: var(--white);
 }

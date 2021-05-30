@@ -1,7 +1,7 @@
 @import "../styles/global.css";
 
-.home {
-  padding-top: 7.5vh; 
+.home-container {
+  margin-top: 25vh; 
 }
 .hero { 
   width: 90vw;
@@ -24,12 +24,13 @@
   font-family: var(--amp);
   font-size: 0.85em;
   font-weight: 400;
-  color: var(--white);
+  color: var(--yellow);
 }
 
 .hero-copy { 
-  width: 80%;
-  color: var(--white) 
+  width:100%;
+  color: var(--white);
+  padding: 0 2rem; 
 }
 .hero-social {
   padding: 2rem 0;

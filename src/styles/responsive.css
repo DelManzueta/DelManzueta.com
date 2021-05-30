@@ -1,46 +1,54 @@
 @import "./global.css";
 
-
 @media only screen and (min-width: 2160px) {
   .home {
     padding-top: 12vh !important;
+  }
+  .hero-header {
+    font-size: 5vw !important;
   }
   .hero-copy {
     font-size: 2em;
   }
 }
 
-@media only screen and (max-width: 956px) {
-  .home {
+@media only screen and (max-width: 984px) {
+  .home-container {
     display: flex;
     flex-direction: column;
-    padding-top: 5vh !important;
+    margin-top: 10vh !important;
   }
-  .hero { 
-    width: 100% !important; 
+  .hero {
+    width: 100% !important;
     flex-direction: column !important;
+    justify-content: flex-start;
   }
   .hero-header {
     font-size: 3.65em !important;
-    font-family: var(--ff-primary);  
-    letter-spacing: 0!important; 
-  } 
+    font-family: var(--ff-primary);
+    letter-spacing: 0 !important;
+  }
   .hero-copy {
     width: 100% !important;
-  } 
+  }
   .about-container {
     border: 3px dashed transparent;
-  } 
+    margin-top: 7.5vh;
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (max-width: 768px) {
- .home {
+  .home {
     margin: 0 auto;
-    padding-top: 2.5vh !important; 
+    padding-top: 2.5vh !important;
     display: flex;
     font-size: 1.1em;
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
+  }
+  .hero-header {
+    font-size: 65vw;
   }
   li {
     font-family: var(--ff-primary);
@@ -52,9 +60,6 @@
     overflow: hidden;
     position: relative;
     width: 43.75rem;
-  }
-  .about-container {
-    border: 3px dotted transparent;
   }
   [class*="grid_"] {
     width: 100%;
@@ -77,12 +82,12 @@
     padding: 2rem 1rem 0 1rem;
     margin: 0 auto;
     font-size: 2.65em;
-    font-weight: 600;  
+    font-weight: 600;
   }
 
   .about-txt {
     font-size: 1em;
     padding: 0 1rem;
-    font-weight: 400; 
+    font-weight: 400;
   }
 }

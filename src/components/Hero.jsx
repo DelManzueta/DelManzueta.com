@@ -1,10 +1,9 @@
 import React from 'react'
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons' 
 
 export default function Hero () {
   return (
-    <div className='container'>
-      <div className='home'>
+    <div id='top-page' className='home-container'>
         <section className='hero'>
           <span className='hero-header'>
             Design <span>&amp;</span> Developer
@@ -34,7 +33,6 @@ export default function Hero () {
           label='GitHub Profile'
         />
         </section>
-      </div>
-    </div>
+      </div> 
   )
 }

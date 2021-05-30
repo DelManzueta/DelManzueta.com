@@ -1,15 +1,16 @@
 @import "./global.css";
 
-
 /* === About Hero === */
 
 .about-container {
-  max-width: 118.938rem;
-  margin: 0 auto;
+  width: 100%;
+  margin-top: 20vh;
   display: flex;
+  align-items: flex-start;
 }
 .del-img {
   z-index: 2;
+  flex-grow: 0;
   margin: 1rem;
   border-radius: 25px;
   max-width: 100%;
@@ -26,7 +27,7 @@
   font-weight: 600;
   min-width: 5vw;
   line-height: 0.95em;
-  color: var(--accent); 
+  color: var(--accent);
 }
 
 .about-txt {
@@ -34,6 +35,7 @@
   padding: 0 1rem;
   font-weight: 400;
   line-height: 1.25em;
+  color: var(--white);
 }
 
 /* Grid 1 of 5*/
@@ -66,6 +68,12 @@
 
 /* Row */
 .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
+
+  justify-content: space-between;
 }
 .row:before,
 .row:after {
@@ -77,6 +85,6 @@
 }
 .row:after {
   clear: both;
-} 
+}
 
 /* === Skill Cards === */
