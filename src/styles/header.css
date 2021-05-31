@@ -1,7 +1,7 @@
 @import "./global.css";
 
-header {
-  padding: 2rem 0;
+header { 
+  padding: 2vh 0;
 }
 
 .top-menu {
@@ -10,6 +10,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 5px solid var(--accent);
+  padding: 2vh 0;
 }
 
 .logo {

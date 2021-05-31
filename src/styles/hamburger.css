@@ -99,7 +99,7 @@ li > a:hover {
 .social-ham:hover {
   filter: drop-shadow(1px 12px 5px rgba(164, 22, 35, 0.71));
   -webkit-transform: scale(1);
-  transform: scale(1.25);
+  transform: scale(1.5);
   border-radius: 2rem;
   transition: 0.5s all ease;
   overflow: visible;

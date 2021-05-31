@@ -12,7 +12,7 @@
   }
 }
 
-@media only screen and (max-width: 984px) {
+@media only screen and (max-width: 1024px) {
   .home-container {
     display: flex;
     flex-direction: column;
@@ -24,17 +24,51 @@
     justify-content: flex-start;
   }
   .hero-header {
-    font-size: 3.65em !important;
+    font-size: 2.85em !important;
     font-family: var(--ff-primary);
     letter-spacing: 0 !important;
   }
   .hero-copy {
     width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
-  .about-container {
-    border: 3px dashed transparent;
-    margin-top: 7.5vh;
-    align-items: flex-start;
+  .about-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10vh;
+  }
+  .about-hero > img {
+    width: 50vw;
+    box-shadow: 2px 30px 21px -1px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 2px 30px 21px -1px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 2px 30px 21px -1px rgba(0, 0, 0, 0.19);
+  }
+
+  .about-hero > img.align-self {
+    align-self: center;
+  }
+
+  .about-hero > img.align-self {
+    align-self: center;
+    margin: 0 auto;
+  }
+  .about-copy > h1 {
+    font-size: 4.75em;
+    padding: 2rem 0;
+    margin: 0;
+  }
+  .about-copy > p {
+    font-family: var(--ff-body);
+    font-size: 2rem;
+    color: var(--white);
+    padding-top: 0;
+    margin-bottom: 1.15rem;
+    line-height: 1.5em;
   }
 }
 
@@ -67,27 +101,32 @@
   .col {
     margin: 1% 0 1% 0%;
   }
-  .del-img {
-    border-radius: 25px !important;
+  .about-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .about-hero {
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+  }
+  .about-hero > img {
     width: 75%;
-    padding: 1rem auto;
-    margin: 0 auto;
-    box-shadow: -2px 48px 73px -19px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: -2px 48px 73px -19px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -2px 48px 73px -19px rgba(0, 0, 0, 1);
-    overflow: hidden;
   }
-  .about-main > h1 {
-    font-family: var(--ff-primary);
-    padding: 2rem 1rem 0 1rem;
-    margin: 0 auto;
-    font-size: 2.65em;
-    font-weight: 600;
+  .about-copy {
+    align-content: center;
+    padding: 0;
+    margin: 0;
   }
-
-  .about-txt {
-    font-size: 1em;
-    padding: 0 1rem;
-    font-weight: 400;
+  .about-copy > h1 {
+    font-size: 10vw !important;
   }
 }
