@@ -36,7 +36,8 @@ export default function Hero () {
           url='https://www.instagram.com/zueta/'
           target='_new'
           label='Instagram'
-        />
+        /> 
+        
       </section>
     </div>
   )

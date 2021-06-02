@@ -10,7 +10,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 0;
+  padding: 4.5vh 0;
+  border-bottom: 4px solid var(--yellow);
 }
  
 .logo a {

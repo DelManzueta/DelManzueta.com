@@ -18,9 +18,8 @@
 }
 
 .hero > img {
-  flex-shrink: 1;
   max-width: 20%; 
-  margin: 25px auto;
+  padding: 10vh 0;
 }
 
 .hero-header {

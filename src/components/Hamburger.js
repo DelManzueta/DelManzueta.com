@@ -62,6 +62,16 @@ const Hamburger = ({ state }) => {
             <div className='menu-links'>
               <nav>
                 <ul>
+                <li>
+                    <Link
+                      onMouseEnter={e => handleHover(e)}
+                      onMouseOut={e => handleHoverExit(e)}
+                      ref={el => (line1 = el)}
+                      to='/'
+                    >
+                      Home
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
@@ -69,7 +79,7 @@ const Hamburger = ({ state }) => {
                       ref={el => (line1 = el)}
                       to='/about'
                     >
-                      About Me
+                      About 
                     </Link>
                   </li>
                   <li>
@@ -79,29 +89,9 @@ const Hamburger = ({ state }) => {
                       ref={el => (line2 = el)}
                       to='/portfolio'
                     >
-                      Work
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      onMouseEnter={e => handleHover(e)}
-                      onMouseOut={e => handleHoverExit(e)}
-                      ref={el => (line3 = el)}
-                      to='/portfolio'
-                    >
                       Portfolio
                     </Link>
-                  </li>
-                  <li>
-                    <Link
-                      onMouseEnter={e => handleHover(e)}
-                      onMouseOut={e => handleHoverExit(e)}
-                      ref={el => (line3 = el)}
-                      to='/resume'
-                    >
-                      History
-                    </Link>
-                  </li>
+                  </li> 
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
@@ -128,7 +118,7 @@ const Hamburger = ({ state }) => {
                   label='GitHub Profile'
                 />
                 <SocialIcon
-                  className='social'
+                  className='social-ham'
                   url='https://www.instagram.com/zueta/'
                   target='_new'
                   label='Instagram'

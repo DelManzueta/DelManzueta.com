@@ -28,7 +28,7 @@
 
 .menu-layer {
   position: relative;
-  background: var(--yellow);
+  background: var(--green);
   height: 100vh;
   overflow: hidden;
 }
@@ -67,16 +67,15 @@ li {
 
 li > a {
   text-decoration: none;
-  color: var(--red);
+  color: var(--dk-green);
   position: absolute;
 }
 
 li > a:hover {
-  color: var(--blue);
-  border-bottom: 5px solid var(--white);
+  color: var(--white);
+  border-bottom: 5px solid var(--blue);
   transition: 0.2s ease all;
-
-  
+  text-shadow: 24px 14px 9px rgba(36, 66, 43, 0.41);
 }
 
 .social-ham {
@@ -84,18 +83,20 @@ li > a:hover {
   transition: 0.5s all ease-out;
   border: 2px solid transparent;
   border-radius: 2rem;
-  background-color: var(--yellow);
+  background-color: var(--white);
+  border: 2px solid var(--green);
 }
 .social-ham:hover {
-  box-shadow: 1px 27px 33px -1px rgba(194, 154, 0, 0.75);
-  -webkit-box-shadow: 1px 27px 33px -1px rgba(194, 154, 0, 0.75);
-  -moz-box-shadow: 1px 27px 33px -1px rgba(194, 154, 0, 0.75);
+  box-shadow: 1px 7px 33px -1px rgba(35, 65, 42, 0.75);
+  -webkit-box-shadow: 1px 7px 33px -1px rgba(35, 65, 42, 0.75);
+  -moz-box-shadow: 1px 7px 33px -1px rgba(35, 65, 42, 0.75);
   -webkit-transform: scale(1);
-  transform: scale(1.5);
+  transform: scale(1.25);
   border-radius: 2rem;
   transition: 0.5s all ease;
   overflow: visible;
   background-color: var(--white);
+  border: 2px solid var(--yellow);
 }
 
 .info {

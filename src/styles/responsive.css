@@ -73,9 +73,15 @@
     margin-bottom: 1.15rem;
     line-height: 1.35em;
   }
+  .about-hero > .divider {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    padding: 0 !important;
+  }
   .main-index {
     display: flex;
     flex-direction: column;
@@ -103,7 +109,7 @@
   }
   .hero > img {
     max-width: 90% !important;
-    padding: 1vh 0;
+    padding: 0 !important;
   }
   li {
     font-family: var(--ff-primary);
@@ -152,7 +158,7 @@
     color: var(--blue);
     line-height: 1em;
     font-size: 13vw !important;
-    text-align: center;
+    text-align: left;
     padding-top: 5vh !important;
     margin: 0 !important;
   }
@@ -161,5 +167,29 @@
   }
   .title > h2 {
     font-size: 15vw;
+  }
+  .ac-header > .divider {
+    display: none;
+  }
+  .ac-header > h1 { 
+    color: var(--green);
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
   }
 }
