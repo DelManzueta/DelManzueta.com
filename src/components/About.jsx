@@ -33,7 +33,8 @@ export class About extends React.Component {
           </div>
         </section>
 
-        <section className='divider' />
+        <section className='divider' />  
+
 
         <section className='about-cards'>
           <AboutCards />

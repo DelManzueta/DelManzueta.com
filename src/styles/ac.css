@@ -9,11 +9,11 @@
 }
 
 .ac-section {
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .ac-section-padded {
-  padding: 140px 0 40px;
+  padding: 0;
 }
 
 .section-container {
@@ -22,7 +22,6 @@
 }
 
 .ac-row {
-  font-family: var(--ff-primary);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -30,59 +29,75 @@
 }
 
 .title {
-  padding: 0 20px;
-  font-family: var(--body);
-  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.85em;
+  text-transform: capitalize;
 }
-.light.muted {
-  font-weight: 300;
-  color: #989da0;
+
+.title > h2 {
+  color: var(--blue);
+  font-family: var(--ff-primary);
+
+  font-size: 2.75em;
+  margin: 0.265rem 0;
+  padding: 0;
+}
+
+.sub-copy {
+  font-family: var(--ff-body);
+  font-size: .85em;
+  font-weight: 400;
+  color: var(--green);
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
 }
 
 .services {
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .service {
   width: 100%;
-  height: 320px;
-  margin: 80px 0;
+  height: 10rem;
+  margin: 5rem 0;
   text-align: center;
-  border: 1px solid transparent;
+  border: 0.063rem solid transparent;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .service .icon-holder {
   position: relative;
-  top: 100px;
+  top: 6.25rem;
   display: inline-block;
-  margin-bottom: 40px;
-  padding: 10px;
+  margin-bottom: 2.5rem;
+  padding: 0.625rem;
   background: white;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .service .heading {
   position: relative;
-  top: 80px;
+  top: 5rem;
   -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .service .icon-holder > img.icon {
-  width: 40px;
+  width: 2.5rem;
 }
 
 .service:hover {
-  border-color: var(--yellow);
+  background-color: var(--accent);
 }
 
 .service:hover .icon-holder {
-  top: -30px;
+  top: -1.875rem;
 }
 
 .service:hover .heading {
-  top: -30px;
+  top: -1.875rem;
 }
 
 .service .description {
@@ -103,30 +118,6 @@
   transform: scale(1);
 }
 
-.col-md-4 {
+.ac-col {
   width: 33.33333333%;
-}
-
-.cut-top {
-  content: " ";
-  position: absolute;
-  z-index: 1;
-  top: -80px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-top: 80px solid transparent;
-  border-right: 30px solid white;
-}
-
-.cut-bottom {
-  content: " ";
-  position: absolute;
-  z-index: 1;
-  bottom: -80px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 80px solid transparent;
-  border-left: 30px solid white;
 }

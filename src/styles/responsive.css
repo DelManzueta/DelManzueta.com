@@ -23,6 +23,10 @@
     flex-direction: column !important;
     justify-content: flex-start;
   }
+  .hero > img {
+    max-width: 80% !important;
+    padding: 1vh 0;
+  }
   .hero-header {
     font-size: 2.85em !important;
     font-family: var(--ff-primary);
@@ -64,30 +68,47 @@
   }
   .about-copy > p {
     font-family: var(--ff-body);
-    font-size: 2rem;
-    color: var(--white);
+    font-size: 1.5rem;
     padding-top: 0;
     margin-bottom: 1.15rem;
-    line-height: 1.5em;
+    line-height: 1.35em;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .main-index {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+  }
   .home {
     margin: 0 auto;
-    padding-top: 2.5vh !important;
     display: flex;
     font-size: 1.1em;
     display: flex;
     flex-wrap: nowrap;
   }
   .hero-header {
-    font-size: 65vw;
+    font-size: 10em;
+    text-align: center;
+  }
+
+ 
+  .hero-copy {
+    text-align: center;
+    max-width: 100% !important;
+  }
+  .hero > img {
+    max-width: 90% !important;
+    padding: 1vh 0;
   }
   li {
     font-family: var(--ff-primary);
     list-style: none;
-    font-size: 5em !important;
+    font-size: 4.35em !important;
     font-weight: 900;
     cursor: pointer;
     height: 6rem !important;
@@ -111,22 +132,34 @@
   }
   .about-hero {
     flex-direction: column;
-    padding: 25px;
+    padding: 15px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
     align-items: center;
+    margin: 0 !important;
   }
   .about-hero > img {
     width: 75%;
   }
   .about-copy {
     align-content: center;
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .about-copy > h1 {
-    font-size: 10vw !important;
+    color: var(--blue);
+    line-height: 1em;
+    font-size: 13vw !important;
+    text-align: center;
+    padding-top: 5vh !important;
+    margin: 0 !important;
+  }
+  .about-container {
+    width: 100%;
+  }
+  .title > h2 {
+    font-size: 15vw;
   }
 }

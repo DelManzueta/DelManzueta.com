@@ -10,19 +10,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid var(--accent);
   padding: 2vh 0;
 }
-
-.logo {
-  filter: drop-shadow(0.1rem 0.5rem 0.54rem rgba(5, 5, 5, 0.25));
-}
+ 
 .logo a {
   font-family: var(--ff-primary);
   font-size: 2.85em;
   font-weight: 700;
   text-decoration: none;
-  color: var(--white);
+  color: var(--blue);
   letter-spacing: -0.095rem;
 }
 .logo span {
@@ -33,11 +29,10 @@ header {
   background: none;
   outline: none;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.35em;
   font-family: var(--ff-primary);
-  color: var(--white);
-}
-
+  color: var(--black);
+} 
 .menu button:hover {
-  color: var(--white);
+  color: var(--black);
 }

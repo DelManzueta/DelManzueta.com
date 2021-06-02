@@ -1,8 +1,7 @@
- import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { Link } from 'react-router-dom'
 import { SocialIcon } from 'react-social-icons'
-
 
 import {
   staggerText,
@@ -18,7 +17,7 @@ const Hamburger = ({ state }) => {
   let menuLayer = useRef(null)
   let reveal1 = useRef(null)
   let reveal2 = useRef(null)
-   // eslint-disable-next-line
+  // eslint-disable-next-line
   let reveal3 = useRef(null)
   let line1 = useRef(null)
   let line2 = useRef(null)
@@ -115,18 +114,24 @@ const Hamburger = ({ state }) => {
                   </li>
                 </ul>
               </nav>
-              <div ref={el => (info = el)} className='info'> 
+              <div ref={el => (info = el)} className='info'>
                 <SocialIcon
                   className='social-ham'
-                  url='https://www.linkedin.com/in/delwingmanzueta/' 
+                  url='https://www.linkedin.com/in/delwingmanzueta/'
                   target='blank'
                   label='LinkedIn Profile'
                 />
                 <SocialIcon
                   className='social-ham'
-                  url='https://github.com/DelManzueta' 
+                  url='https://github.com/DelManzueta'
                   target='blank'
                   label='GitHub Profile'
+                />
+                <SocialIcon
+                  className='social'
+                  url='https://www.instagram.com/zueta/'
+                  target='_new'
+                  label='Instagram'
                 />
               </div>
             </div>

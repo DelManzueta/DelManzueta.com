@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+// eslint-disable-next-line
 import { withRouter, Link } from 'react-router-dom'
 import Hamburger from './Hamburger'
 
@@ -55,7 +56,6 @@ const Header = ({ history }) => {
       <div className='container'>
           <div className='top-menu'>
             <div className='logo'>
-              <Link to='/'>Del<span>.</span></Link>
             </div>
             <div className='menu'>
               <button disabled={disabled} onClick={handleMenu}>
