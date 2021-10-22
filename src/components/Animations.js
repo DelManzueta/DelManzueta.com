@@ -15,14 +15,29 @@ export const staggerReveal = (node1, node2, node3) => {
 }
 
 // CLOSE MENU
-export const staggerRevealClose = (node1, node2, node3) => {
-  gsap.to([node1, node2, node3], {
-    duration: 0.8,
-    height: 0,
+// export const staggerRevealClose = (node1, node2, node3) => {
+//   gsap.to([node1, node2, node3], {
+//     duration: 0.8,
+//     height: 0,
+//     ease: 'power3.inOut',
+//     stagger: {
+//       amount: 0.07
+//     }
+//   })
+// }
+
+export const testDrive =() =>{
+  gsap.to([
+    node1,
+    node1,
+    node3
+  ], {
+    duration: 0.8;
+    height:0,
     ease: 'power3.inOut',
-    stagger: {
-      amount: 0.07
-    }
+      stagger: {
+        amount:.05
+      }
   })
 }
 

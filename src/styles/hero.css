@@ -1,85 +1,14 @@
 @import "../styles/global.css";
 
-.home-container {
+.hero {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
   margin: 0 auto;
-}
-.hero {
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  justify-content: space-between;
+  border: 2px solid green;
 }
 
-.hero > img {
-  max-width: 20%; 
-  padding: 10vh 0;
-}
-
-.hero-header {
-  font-size: 2.5em;
+h1 {
   font-family: var(--ff-primary);
-  font-weight: 400;
-  line-height: 1em;
-  color: var(--green); 
-}
-
-.hero-header > span {
-  font-family: var(--amp);
-  font-size: 0.85em;
-  font-weight: 400;
-  color: var(--blue);
-}
-.hero-header > one {
-  color: var(--green);
-}
-
-.hero-copy {
-  max-width: 50%;
-  color: var(--blue);
-  padding: 0 2rem;
-}
-
-p {
-  font-family: var(--ff-body);
-  font-weight: 500;
-  font-size: 0.75em;
-  letter-spacing: 0.063em;
-}
-
-h5 {
-  font-family: var(--ff-body);
-  font-weight: 600;
-  font-size: 1.25em;
-  letter-spacing: 0.043em;
-  z-index: 5;
-  padding: 0;
-}
-
-.hero-social {
-  padding: 2rem 0; 
-  margin: 0 auto;
-}
-.social {
-  margin: 0 0.5rem;
-  transition: 0.5s all ease-out;
-  border: 2px solid transparent;
-  border-radius: 2rem;
-  z-index: 3;
-}
-.social:hover {
-  filter: drop-shadow(0.24rem 0.5rem 0.54rem rgba(0, 0, 0, 0.25));
-  -webkit-transform: scale(1);
-  transform: scale(1.25);
-  border: 2px solid var(--white);
-  background-color: var(--white);
-  border-radius: 2rem;
-  transition: 0.5s all ease;
-  overflow: visible;
 }
