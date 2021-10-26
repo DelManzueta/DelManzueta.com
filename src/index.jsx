@@ -1,18 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-import Hero from './components/Hero/Hero'
+import { Hero } from "./components/Hero/Hero";
 
 class MyPortfolio extends React.Component {
-  render () {
-    return (
-      <div>
-        <Hero/>
-      </div>
-    )
+  render() {
+    return <Hero />;
   }
 }
 
-const container = document.getElementsByClassName('app-container')[0]
+const container = document.getElementsByClassName("app-container")[0];
 
-ReactDOM.render(React.createElement(MyPortfolio), container)
+ReactDOM.render(React.createElement(MyPortfolio), container);
